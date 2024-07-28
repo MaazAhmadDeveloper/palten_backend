@@ -14,7 +14,7 @@ import textContent from "./routes/textContent.js";
 
 //Connect with MongoDB
 // maazdeveloper404
-mongoose.connect("mongodb+srv://maazDeveloper:maazDeveloper@fileconverter.dg1qq02.mongodb.net/?retryWrites=true&w=majority&appName=fileConverter").then(() => {
+mongoose.connect("mongodb+srv://adminPalten:adminPalten@fileconverter.dg1qq02.mongodb.net/?retryWrites=true&w=majority&appName=fileConverter").then(() => {
     console.log("Connected to DB");
 }).catch((err) => {
     // console.log(err.message);
