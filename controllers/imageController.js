@@ -28,7 +28,7 @@ export const image_converter = async (req, res) => {
 
     // const userData = JSON.parse(req.body.userData);    
     const filePath = path.join(__dirname, '..', req.file.path); // Adjust the path accordingly
-    const outputPath = path.join(__dirname, '..', 'uploads', 'output.png'); // Adjust the path accordingly
+    const outputPath = path.join(__dirname, '..', 'tmp/uploads', 'output.png'); // Adjust the path accordingly
 
 
     try {

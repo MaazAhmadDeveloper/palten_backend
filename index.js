@@ -49,7 +49,7 @@ app.get("/",(req, res)=>{
     res.send("hello world");
 })
 
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({ dest: 'tmp/uploads/' });
 
 //USEER
 app.post('/api/users/addusers', addUsersController);
