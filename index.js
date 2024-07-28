@@ -49,7 +49,7 @@ app.get("/",(req, res)=>{
     res.send("hello world");
 })
 
-const upload = multer({ dest: 'tmp/uploads/' });
+// const upload = multer({ dest: 'tmp/uploads/' });
 
 //USEER
 app.post('/api/users/addusers', addUsersController);
@@ -61,23 +61,23 @@ app.post('/api/users/contactus', addContactUsController);
 app.post('/api/credits/getCredits', getCreditsController);
 
 // IMAGE
-app.post('/api/file/image-converter', upload.single('file'), image_converter);
+// app.post('/api/file/image-converter', upload.single('file'), image_converter);
 
-// DOCUMENT
-app.post('/api/file/document-pdfToTxt', upload.single('file'), document_pdfToTxt);
-app.post('/api/file/document-txtToPdf', upload.single('file'), document_txtToPdf);
-app.post('/api/file/document-txtToDocx', upload.single('file'), document_txtToDocx);
-app.post('/api/file/document-txtToHtml', upload.single('file'), document_txtToHtml);
-app.post('/api/file/document-txtToPptx', upload.single('file'), document_txtToPptx);
-app.post('/api/file/document-docxToHtml',  upload.single('file'), document_docxToHtml);
-app.post('/api/file/document-docxToPdf', upload.single('file'), document_docxToPdf);
-app.post('/api/file/document-docxToTxt', upload.single('file'), document_docxToTxt);
+// // DOCUMENT
+// app.post('/api/file/document-pdfToTxt', upload.single('file'), document_pdfToTxt);
+// app.post('/api/file/document-txtToPdf', upload.single('file'), document_txtToPdf);
+// app.post('/api/file/document-txtToDocx', upload.single('file'), document_txtToDocx);
+// app.post('/api/file/document-txtToHtml', upload.single('file'), document_txtToHtml);
+// app.post('/api/file/document-txtToPptx', upload.single('file'), document_txtToPptx);
+// app.post('/api/file/document-docxToHtml',  upload.single('file'), document_docxToHtml);
+// app.post('/api/file/document-docxToPdf', upload.single('file'), document_docxToPdf);
+// app.post('/api/file/document-docxToTxt', upload.single('file'), document_docxToTxt);
 
-// SPRAEADSHEET
-app.post('/api/file/spreadsheet-xlsxConversion', upload.single('file'), spreadsheet_xlsxConversion);
-app.post('/api/file/spreadsheet-csvConversion', upload.single('file'), spreadsheet_csvConversion);
-app.post('/api/file/spreadsheet-xlsConversion', upload.single('file'), spreadsheet_xlsConversion);
-app.post('/api/file/spreadsheet-odsConversion', upload.single('file'), spreadsheet_odsConversion);
+// // SPRAEADSHEET
+// app.post('/api/file/spreadsheet-xlsxConversion', upload.single('file'), spreadsheet_xlsxConversion);
+// app.post('/api/file/spreadsheet-csvConversion', upload.single('file'), spreadsheet_csvConversion);
+// app.post('/api/file/spreadsheet-xlsConversion', upload.single('file'), spreadsheet_xlsConversion);
+// app.post('/api/file/spreadsheet-odsConversion', upload.single('file'), spreadsheet_odsConversion);
 
 // TEXTCONTENT
 app.post('/api/textContent/getFaqs', getFaqsController);
